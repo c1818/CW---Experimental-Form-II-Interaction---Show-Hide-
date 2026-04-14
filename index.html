@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Research Talks Interactive Poster</title>
+    <meta name="description" content="Interactive poster for faculty research talks">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=Jersey+10&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body>
+    <main class="game-shell">
+      <div class="poster-stage">
+        <div class="poster-window">
+
+          <!-- START SCREEN -->
+          <section id="start-screen" class="screen active">
+            <img src="images/ENTRY.PNG" alt="Opening room background" class="screen-bg">
+
+            <div class="start-overlay">
+              <div class="start-text">
+                <h1>Research Talks</h1>
+
+                <p class="entry-speaker-list">
+                  <span class="entry-door-number">01</span> &#124; Vanessa Dion Fletcher<br>
+                  <span class="entry-door-number">02</span> &#124; Kelsey Pugh<br>
+                  <span class="entry-door-number">03</span> &#124; Anna Stielau
+                </p>
+              </div>
+
+              <div class="entry-event-details">
+                <p class="entry-subline">OCAD University Arts &amp; Science Research Talks</p>
+                <p class="entry-details">
+                  March 24, 2026 &nbsp;&#9656;<br>
+                  Room 543 &nbsp;&#9656;<br>
+                  100 McCaul St, Toronto &nbsp;&#9656;
+                </p>
+              </div>
+            </div>
+
+            <button id="enter-hallway" class="image-button start-door-button" aria-label="Enter room 543">
+              <img src="images/00-DOOR.PNG" alt="Door to room 543">
+            </button>
+          </section>
+
+          <!-- HALLWAY SCREEN -->
+          <section id="hallway-screen" class="screen">
+            <img src="images/HALLWAY.PNG" alt="Hallway with three speaker doors" class="screen-bg">
+
+            <button id="hallway-exit" class="image-button exit-button" aria-label="Exit hallway">
+              <img src="images/EXIT-CLEAN.PNG" alt="Exit sign">
+            </button>
+
+            <div class="hallway-doors">
+              <button id="go-vanessa-room" class="image-button hallway-door vanessa-door" aria-label="Go to Vanessa's room">
+                <img src="images/01-DOOR.PNG" alt="Door 01">
+              </button>
+
+              <button id="go-kelsey-room" class="image-button hallway-door kelsey-door" aria-label="Go to Kelsey's room">
+                <img src="images/02-DOOR.PNG" alt="Door 02">
+              </button>
+
+              <button id="go-anna-room" class="image-button hallway-door anna-door" aria-label="Go to Anna's room">
+                <img src="images/03-DOOR.PNG" alt="Door 03">
+              </button>
+            </div>
+          </section>
+
+          <!-- VANESSA ROOM -->
+          <section id="vanessa-room" class="screen speaker-room">
+            <img src="images/INSIDE-ROOM.PNG" alt="Inside speaker room background" class="screen-bg">
+
+            <button class="image-button exit-button room-exit vanessa-room-exit" aria-label="Leave Vanessa's room">
+              <img src="images/EXIT-CLEAN.PNG" alt="Exit sign">
+            </button>
+
+            <div class="room-label vanessa-room-label">
+              <h2>Vanessa Dion <br> Fletcher</h2>
+            </div>
+
+            <button id="open-vanessa-popup" class="image-button speaker-button vanessa-speaker" aria-label="Open Vanessa info popup">
+              <img src="images/VANESSA-STAGE.png" alt="Vanessa on stage">
+            </button>
+
+            <div id="vanessa-popup" class="info-popup">
+              <button class="image-button close-popup" aria-label="Close Vanessa popup">
+                <img src="images/CLOSE-02.png" alt="Close popup">
+              </button>
+
+              <div class="popup-inner">
+                <img src="images/01-INFO.PNG" alt="Vanessa info panel background" class="popup-bg">
+
+                <div class="popup-content">
+                  <div class="popup-portrait placeholder-portrait">
+                    <p>Vanessa Dion Fletcher portrait</p>
+                  </div>
+
+                  <div class="popup-text">
+                    <h2 class="popup-speaker-name">Vanessa Dion <br> Fletcher</h2>
+                    <h3>BIG Doll || Xwat Naaniitus</h3>
+
+                    <h4>Bio</h4>
+                    <p>
+                      Vanessa Dion Fletcher is a Lenape and Potawatomi neurodiverse artist. Her family is from
+                      Eelūnaapèewii Lahkèewiitt and European settlers. She employs porcupine quills, Wampum belts,
+                      and menstrual blood to reveal the complexities of what defines a body physically and culturally.
+                      Reflecting on an Indigenous and gendered body with a neurodiverse mind, Dion Fletcher creates art
+                      using composite media, primarily working in performance, textiles, and video.
+                    </p>
+
+                    <h4>Talk</h4>
+                    <p>
+                      BIG Doll || Xwat Naaniitus is an exhibition that shows the process of making and creating from the heart,
+                      not the head. This exhibition is both profoundly personal and collaborative, open to audiences of all ages
+                      to participate in the design of an artwork.
+                    </p>
+                  </div>
+
+                  <a class="popup-event-link vanessa-event-link" href="https://www.ocadu.ca/events-and-exhibitions/research-talks-vanessa-dion-fletcher-kelsey-pugh-anna-stielau" target="_blank" rel="noopener noreferrer">
+                    OCADu Event Page
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- KELSEY ROOM -->
+          <section id="kelsey-room" class="screen speaker-room">
+            <img src="images/INSIDE-ROOM.PNG" alt="Inside speaker room background" class="screen-bg">
+
+            <button class="image-button exit-button room-exit kelsey-room-exit" aria-label="Leave Kelsey's room">
+              <img src="images/EXIT-CLEAN.PNG" alt="Exit sign">
+            </button>
+
+            <div class="room-label kelsey-room-label">
+              <h2>Kelsey Pugh</h2>
+            </div>
+
+            <button id="open-kelsey-popup" class="image-button speaker-button kelsey-speaker" aria-label="Open Kelsey info popup">
+              <img src="images/KELSEY-STAGE.png" alt="Kelsey on stage">
+            </button>
+
+            <div id="kelsey-popup" class="info-popup">
+              <button class="image-button close-popup" aria-label="Close Kelsey popup">
+                <img src="images/CLOSE-02.png" alt="Close popup">
+              </button>
+
+              <div class="popup-inner">
+                <img src="images/02-INFO.PNG" alt="Kelsey info panel background" class="popup-bg">
+
+                <div class="popup-content">
+                  <div class="popup-portrait placeholder-portrait">
+                    <p>Kelsey Pugh portrait</p>
+                  </div>
+
+                  <div class="popup-text">
+                    <h2 class="popup-speaker-name">Kelsey Pugh</h2>
+                    <h3>Reconstructing Ancient Faces</h3>
+
+                    <h4>Bio</h4>
+                    <p>
+                      Kelsey Pugh is a paleoanthropologist studying ape and human evolution from the fossil record.
+                      She uses methods including comparative anatomy, phylogenetics, and 3D geometric morphometrics
+                      to address questions about the last common ancestor of apes and humans.
+                    </p>
+
+                    <h4>Talk</h4>
+                    <p>
+                      Relatively complete fossils of hominoids are rare discoveries, and those that are known have often
+                      been distorted or damaged. This talk looks at how virtual reconstruction can help correct that damage,
+                      using the 12-million-year-old ape Pierolapithecus as an example.
+                    </p>
+                  </div>
+
+                  <a class="popup-event-link kelsey-event-link" href="https://www.ocadu.ca/events-and-exhibitions/research-talks-vanessa-dion-fletcher-kelsey-pugh-anna-stielau" target="_blank" rel="noopener noreferrer">
+                    OCADu Event Page
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ANNA ROOM -->
+          <section id="anna-room" class="screen speaker-room">
+            <img src="images/INSIDE-ROOM.PNG" alt="Inside speaker room background" class="screen-bg">
+
+            <button class="image-button exit-button room-exit anna-room-exit" aria-label="Leave Anna's room">
+              <img src="images/EXIT-CLEAN.PNG" alt="Exit sign">
+            </button>
+
+            <div class="room-label anna-room-label">
+              <h2>Anna Stielau</h2>
+            </div>
+
+            <button id="open-anna-popup" class="image-button speaker-button anna-speaker" aria-label="Open Anna info popup">
+              <img src="images/ANNA-STAGE.png" alt="Anna on stage">
+            </button>
+
+            <div id="anna-popup" class="info-popup">
+              <button class="image-button close-popup" aria-label="Close Anna popup">
+                <img src="images/CLOSE-02.png" alt="Close popup">
+              </button>
+
+              <div class="popup-inner">
+                <img src="images/03-INFO.PNG" alt="Anna info panel background" class="popup-bg">
+
+                <div class="popup-content">
+                  <div class="popup-portrait">
+                    <img src="images/ANNA-INFO.png" alt="Anna portrait">
+                  </div>
+
+                  <div class="popup-text">
+                    <h2 class="popup-speaker-name">Anna Stielau</h2>
+                    <h3>Arts of Darkness: Rethinking Photography from South Africa</h3>
+
+                    <h4>Bio</h4>
+                    <p>
+                      Anna Stielau is an assistant professor of art history and visual culture at OCADU.
+                      She received her PhD from NYU’s Department of Media, Culture, and Communication
+                      and previously served as the Weisman Postdoctoral Teaching Fellow in Visual Culture at Caltech.
+                    </p>
+
+                    <h4>Talk</h4>
+                    <p>
+                      Photography is an infrastructural art. It needs light, power, and water. In South Africa,
+                      where rolling blackouts and water shortages are routine, those resources cannot be taken for granted.
+                      Anna shares work exploring how artists are working within, and thinking through, those constraints.
+                    </p>
+                  </div>
+
+                  <a class="popup-event-link anna-event-link" href="https://www.ocadu.ca/events-and-exhibitions/research-talks-vanessa-dion-fletcher-kelsey-pugh-anna-stielau" target="_blank" rel="noopener noreferrer">
+                    OCADu Event Page
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <script src="js/js.js"></script>
+  </body>
+</html>
