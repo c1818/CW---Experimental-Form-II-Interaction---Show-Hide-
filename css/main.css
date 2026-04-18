@@ -435,8 +435,9 @@ body{
 
 .kelsey-portrait img{
 
-  transform: scale(1.40);
-  transform-origin: center;
+  width: 100%;
+  height: auto;
+  display: block;
 
 }
 
