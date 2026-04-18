@@ -433,20 +433,11 @@ body{
 
 }
 
-.kelsey-portrait{
-
-  width: 400px;
-  height: 400px;
-  margin-top: -25px;
-  margin-left: 65px;
-  overflow: hidden;
-
-}
 
 
 .kelsey-portrait img{
 
-  width: 100%;
+  width: 70%;
   height: auto;
   display: block;
 
