@@ -433,24 +433,6 @@ body{
 
 }
 
-.kelsey-portrait{
-
-  width: 400px;
-  height: 400px;
-  margin-top: -25px;
-  margin-left: 65px;
-  overflow: hidden;
-
-
-.kelsey-portrait img{
-
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-
-}
-
 .placeholder-portrait{
 
   width:400px;
@@ -463,7 +445,8 @@ body{
   justify-content:center;
   text-align:center;
   padding:20px;
-  
+  border:1px dashed white;
+
 }
 
 .popup-text{
